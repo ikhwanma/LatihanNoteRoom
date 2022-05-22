@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context=".EditFragment">
+
+    <TextView
+        android:id="@+id/tv_keterangan"
+        style="@style/TextStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/edit_note"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/input_judul"
+        style="@style/InputTextStyle"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:hint="@string/judul"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input_catatan"
+        style="@style/InputTextStyle"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:hint="@string/catatan"
+        android:inputType="textMultiLine"
+        />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        android:text="@string/edit" />
+
+</LinearLayout>
