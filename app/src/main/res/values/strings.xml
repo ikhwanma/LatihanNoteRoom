@@ -20,4 +20,5 @@
     <string name="delete">Delete</string>
     <string name="edit_note">Edit Note</string>
     <string name="logout">Logout</string>
+    <string name="hello">Hello,</string>
 </resources>

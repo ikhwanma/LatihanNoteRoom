@@ -36,7 +36,12 @@ class ProfileFragment : Fragment() {
             GlobalScope.async {
                 val user = appDatabase.appDao().getUserRegistered(it)
                 requireActivity().runOnUiThread {
-                    tv_username.text = user.nama
+                    val txt = "Hello, ${user.nama.replaceFirstChar {
+                        if (it.isLowerCase()) it.titlecase(
+                            Locale.getDefault()
+                        ) else it.toString()
+                    }}"
+                    tv_username.text = txt
                     tv_email.text = user.email
                 }
             }
